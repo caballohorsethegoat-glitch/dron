@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "id": "dronmod",
+  "version": "${version}",
+  "name": "Dron",
+  "description": "Dron que te agarra la camara hasta que lo esquivas pulsando ESPACIO.",
+  "authors": ["Tu nombre"],
+  "license": "MIT",
+  "environment": "*",
+  "mixins": [
+    { "config": "dronmod.client.mixins.json", "environment": "client" }
+  ],
+  "entrypoints": {
+    "main": ["com.dronmod.DronMod"],
+    "client": ["com.dronmod.client.DronClient"]
+  },
+  "depends": {
+    "fabricloader": ">=0.16.0",
+    "minecraft": "~1.21.1",
+    "java": ">=21",
+    "fabric-api": "*"
+  }
+}
